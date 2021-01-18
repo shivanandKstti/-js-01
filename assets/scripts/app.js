@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const defaultResult = 0;
 let currentResult = defaultResult;
 let logEntries = [];
