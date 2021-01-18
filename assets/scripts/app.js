@@ -27,6 +27,17 @@ function writeToLog(operationIdentifier, prevResult, operationNumber, newResult)
     console.log(logEntries);
 }
 
+function calculateREsult(calculationType) {
+    const entereNumber = getUserNumberInput();
+    const initalResult = currentResult;
+
+    if (calculationType === 'ADD') {
+        currentResult += entereNumber;
+    } else {
+
+    }
+}
+
 function add() {
     const entereNumber = getUserNumberInput();
     const initalResult = currentResult;
