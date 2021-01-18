@@ -33,17 +33,19 @@ function calculateREsult(calculationType) {
 
     if (calculationType === 'ADD') {
         currentResult += entereNumber;
-    } else {
+    } else if (calculationType === 'SUBTRACT') {
+        currentResult -= entereNumber;
+    } else if (calculationType === 'MULTIPLY') {
 
     }
+    createAndWriteLog('+', initalResult, entereNumber);
+    writeToLog('ADD', initalResult, entereNumber, currentResult);
 }
 
 function add() {
     const entereNumber = getUserNumberInput();
     const initalResult = currentResult;
     currentResult += entereNumber;
-    createAndWriteLog('+', initalResult, entereNumber);
-    writeToLog('ADD', initalResult, entereNumber, currentResult);
 
 }
 
